@@ -1,14 +1,14 @@
-import HelloMarquee from '../HelloMarquee';
+
 import './index.scss';
 import Hero from '../Hero';
 
 
-const Home = () => {
+const Home = ({ scrollToSection, homeRef, aboutRef, kontaktRef }) => {
   return (
     <div className='App'>
 
-      <Hero />
-      <HelloMarquee />
+      <Hero scrollToSection={scrollToSection} aboutRef={aboutRef} />
+
 
     </div >
   );
