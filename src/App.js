@@ -16,6 +16,7 @@ function App() {
       <Router>
         <Loader />
         <Navbar />
+        <Home />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
