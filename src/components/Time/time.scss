@@ -1,0 +1,49 @@
+.Timer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    align-items: center;
+
+    .Timer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10rem 0rem 8rem 0rem;
+        justify-content: center;
+        background-color: var(--primary-color);
+
+
+        .timecontainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 70px);
+            grid-gap: 10px;
+            margin: 0px 15px;
+
+        }
+
+
+        .Überschrifttimer {
+            margin: 0px 0px 40px 0px;
+            color: var(--secondary-color);
+
+        }
+
+        .Zeit {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: var(--secondary-color);
+            font-size: large;
+            font-weight: 600;
+            align-items: center;
+            color: var(--primary-color);
+            padding: 10px;
+            margin: 5px;
+
+        }
+
+    }
+}
