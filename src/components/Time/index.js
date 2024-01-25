@@ -1,5 +1,6 @@
 import './time.scss'
 import React, { useState, useEffect } from 'react';
+import gsap from 'gsap';
 
 
 const Time = () => {
@@ -36,8 +37,28 @@ const Time = () => {
         return () => clearInterval(intervalId);
     }, []);
 
+
+    const animateContainerOnHover = () => {
+        gsap.to('.timecontainer', {
+    
+          y: 10,
+          duration: 1,
+          ease: 'power2.inOut',
+    
+        });
+
+      }
+    
+      const animateContainerOnLeave = () => {
+      gsap.to('.timecontainer', {
+        y: 0,
+        duration: 1,
+        ease: 'power2.inOut',
+      });
+    }
+
     return (
-        <div class="Timer-container">
+        <div class="Timer-container" onMouseEnter={animateContainerOnHover} onMouseLeave={animateContainerOnLeave}>
             <div class="Timer">
                 <h2 class="Überschrifttimer">MEINE REISE STARTETE:</h2>
                 <div class="timecontainer">

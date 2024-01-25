@@ -122,42 +122,41 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, kontaktRef }) => {
       });
     };
 
-
   }, []); // empty dependency array to run the effect once after mounting
 
   return (
     <>
-    <nav ref={navRef}>
-      <div className="navbar" >
-        <div className="nav-items js-work-link">
-          <a href='#' onClick={() => scrollToSection(homeRef)}><span className='js-an-word'>HOME</span><span className="underline"></span></a>
+      <nav ref={navRef}>
+        <div className="navbar" >
+          <div className="nav-items js-work-link">
+            <a href='#' onClick={() => scrollToSection(homeRef)}><span className='js-an-word'>HOME</span><span className="underline"></span></a>
           </div>
-        <div className="nav-items js-work-link">
-          <a href='#' onClick={() => scrollToSection(aboutRef)}><span className='js-an-word'>ABOUT</span><span className="underline"></span></a>
+          <div className="nav-items js-work-link">
+            <a href='#' onClick={() => scrollToSection(aboutRef)}><span className='js-an-word'>ABOUT</span><span className="underline"></span></a>
           </div>
-        <div className="nav-items js-work-link">
-          <a href='#' onClick={() => scrollToSection(kontaktRef)}><span className='js-an-word'>KONTAKT</span><span className="underline"></span></a>
+          <div className="nav-items js-work-link">
+            <a href='#' onClick={() => scrollToSection(kontaktRef)}><span className='js-an-word'>KONTAKT</span><span className="underline"></span></a>
           </div>
-        <button className="toggle-button" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-      </button>
-      </div>
-      <div className="name">
-        <h1 className='Buchstabe'>S</h1>
-        <h1 className='Buchstabe'>I</h1>
-        <h1 className='Buchstabe'>M</h1>
-        <h1 className='Buchstabe'>O</h1>
-        <h1 className='Buchstabe'>N</h1>
-        <h1> </h1>
-        <h1 className='Buchstabe'>J</h1>
-        <h1 className='Buchstabe'>A</h1>
-        <h1 className='Buchstabe'>N</h1>
-        <h1 className='Buchstabe'>S</h1>
-        <h1 className='Buchstabe'>E</h1>
-        <h1 className='Buchstabe'>N</h1>
-      </div>
-      
-      {isMobileMenuOpen && <MobileNav isOpen={isMobileMenuOpen} toggleMenu={toggleMobileMenu} scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} kontaktRef={kontaktRef}/>}    </nav>
+          <button className="toggle-button" onClick={toggleMobileMenu} >
+            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+        <div className="name">
+          <h1 className='Buchstabe'>S</h1>
+          <h1 className='Buchstabe'>I</h1>
+          <h1 className='Buchstabe'>M</h1>
+          <h1 className='Buchstabe'>O</h1>
+          <h1 className='Buchstabe'>N</h1>
+          <h1> </h1>
+          <h1 className='Buchstabe'>J</h1>
+          <h1 className='Buchstabe'>A</h1>
+          <h1 className='Buchstabe'>N</h1>
+          <h1 className='Buchstabe'>S</h1>
+          <h1 className='Buchstabe'>E</h1>
+          <h1 className='Buchstabe'>N</h1>
+        </div>
+
+        {isMobileMenuOpen && <MobileNav isOpen={isMobileMenuOpen} toggleMenu={toggleMobileMenu} scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} kontaktRef={kontaktRef} />}    </nav>
       <Colorswitcher/>
     </>
   )

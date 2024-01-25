@@ -37,6 +37,11 @@ footer {
             text-decoration: none;
             color: var(--primary-color);
 
+            &:hover {
+                color: var(--primary-color);
+                text-decoration: underline;
+            }
+
 
             svg {
                 width: 16px;

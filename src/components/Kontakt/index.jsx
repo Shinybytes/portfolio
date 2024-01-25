@@ -22,7 +22,7 @@ const Kontakt = () => {
 
       <div className="kontakt-container">
         <h1>KONTAKT</h1>
-        <p>Wie möchtest du mich Kontaktieren?</p>
+        <p>Kontaktieren Sie mich</p>
 
         {showButtons ? (
           <Buttons onButtonClick={handleButtonClick} />
