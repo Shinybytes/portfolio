@@ -110,26 +110,26 @@
 
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 1108px) {
     .Aboutpage {
         .Bildcontainer {
             height: 100%;
         }
 
         .Bild {
-            margin: 0px 0px -10px 0px;
+            margin: -10px 0px 0px 0px;
         }
 
         .text {
-            margin: 0rem -1rem;
+            margin: 0rem 0rem;
 
             h1 {
-                font-size: 3rem;
-                margin-top: 3rem;
+                font-size: 6rem;
+                margin-top: 0rem;
             }
 
             p {
-                font-size: 0.8rem;
+                font-size: 2rem;
                 margin: 0px;
             }
         }

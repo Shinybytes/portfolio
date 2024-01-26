@@ -52,17 +52,16 @@
     
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 530px){
     .buttoncontainer{
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
-        margin-top: 4rem;
-        gap: 1rem;
+        margin-top: 1rem;
+        gap: 0rem;
 
         button{
-            height: 25vw;
-            width: 25vw;
+            padding: 1rem 1rem;
         }
     }
 }
