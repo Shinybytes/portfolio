@@ -9,28 +9,28 @@ const Hero = ({ scrollToSection, aboutRef }) => {
 
 
     const animateButtonOnHover = () => {
-        // Füge die Animation zur Timeline hinzu
+
         gsap.to('.button', {
-            rotate: 359, // Ändere dies je nach gewünschter Bewegung
+            rotate: 359,
             duration: 0.5,
             ease: 'power2.inOut',
             onComplete: () => {
                 gsap.to('.button', {
-                    rotate: 0, // Ändere dies je nach gewünschter Bewegung
+                    rotate: 0, 
                     duration: 0.5,
                     ease: 'power2.inOut',
                 });
             }
         });
-        // Füge die Animation zur Timeline hinzu
+        
         gsap.to('.hi', {
-            rotate: -5, // Ändere dies je nach gewünschter Bewegung
+            rotate: -5, 
             y: -30,
             duration: 0.5,
             ease: 'power2.inOut',
             onComplete: () => {
                 gsap.to('.hi', {
-                    rotate: 0, // Ändere dies je nach gewünschter Bewegung
+                    rotate: 0, 
                     y: 0,
                     duration: 0.5,
                     ease: 'power2.inOut',
@@ -39,13 +39,13 @@ const Hero = ({ scrollToSection, aboutRef }) => {
         });
 
         gsap.to('.hisub', {
-            rotate: -5, // Ändere dies je nach gewünschter Bewegung
+            rotate: -5, 
             duration: 0.5,
             x: -30,
             ease: 'power2.inOut',
             onComplete: () => {
                 gsap.to('.hisub', {
-                    rotate: 0, // Ändere dies je nach gewünschter Bewegung
+                    rotate: 0, 
                     x: 0,
                     duration: 0.5,
                     ease: 'power2.inOut',

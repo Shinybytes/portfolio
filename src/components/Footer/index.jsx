@@ -2,7 +2,7 @@ import './footer.scss';
 import React, { useEffect } from 'react';
 
 const Footer = () => {
-    // Get current year function
+    
     const text = "Copyright © ";
 
     function getCurrentYearAsString() {

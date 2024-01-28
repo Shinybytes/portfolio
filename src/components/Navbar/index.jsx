@@ -10,7 +10,6 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, kontaktRef }) => {
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Function to toggle the mobile menu state
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };

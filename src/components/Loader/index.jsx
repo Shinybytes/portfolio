@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import './loader.scss';
 import gsap from 'gsap';
 
@@ -11,9 +11,9 @@ const Loader = () => {
                 const newValue = prevValue + 1;
                 return newValue > 100 ? 100 : newValue;
             });
-        }, 16); // Anpassen der Zeitverzögerung, um die Geschwindigkeit zu steuern
+        }, 16);
 
-        // Stoppe das Intervall nach etwa 5 Sekunden (5000 Millisekunden)
+        
         setTimeout(() => {
             clearInterval(intervalId);
         }, 5000);
@@ -26,7 +26,7 @@ const Loader = () => {
         
      
      
-        // Aufräumen, wenn die Komponente entladen wird
+        
         return () => clearInterval(intervalId);
 
 
