@@ -5,6 +5,7 @@ import Skills from '../Skills';
 import Time from '../Time';
 import HelloMarquee from '../HelloMarquee';
 import gsap from "gsap";
+import Abouttext from '../Abouttext';
 
 
 
@@ -66,20 +67,9 @@ const About = () => {
         </div>
         <Time />
         <Skills />
+        <Abouttext />
 
-        <div className='text2'>
-          <p>
-            Meine Leidenschaft gilt insbesondere der Web- und App-Entwicklung sowie dem Design.
-          </p>
-          <p>
-            Ich liebe es, innovative Lösungen zu gestalten und meine kreativen Ideen in die digitale Welt umzusetzen.
-          </p>
-          <p>
-            Während meines Studiums habe ich einige Kenntnisse in den Programmiersprachen, Java, JavaScript und Python gesammelt.
-          </p>
-
-
-        </div>
+       
 
 
 

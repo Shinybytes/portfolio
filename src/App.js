@@ -35,6 +35,9 @@ function App() {
         <section ref={kontaktRef} id="kontakt">
           <Kontakt />
         </section>
+
+
+        
         <Footer />
       </BrowserRouter>
     </div>
