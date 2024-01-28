@@ -27,6 +27,7 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, kontaktRef }) => {
   useEffect(() => {
 
 
+
     function enterAnimation(link, e, index) {
       link.tl.tweenFromTo(0, 'midway');
     }
@@ -122,7 +123,11 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, kontaktRef }) => {
       });
     };
 
-  }, []); // empty dependency array to run the effect once after mounting
+
+
+    
+
+  }, []);
 
   return (
     <>
