@@ -60,7 +60,7 @@ const Time = () => {
     return (
         <div class="Timer-container" onMouseEnter={animateContainerOnHover} onMouseLeave={animateContainerOnLeave}>
             <div class="Timer">
-                <h2 class="Überschrifttimer">MEINE REISE STARTETE:</h2>
+                <h2 class="Überschrifttimer">Meine Reise startete:</h2>
                 <div class="timecontainer">
 
                     <p class="Zeit">
