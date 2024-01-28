@@ -204,38 +204,20 @@
 }
 
 @media screen and (max-width: 467px) {
-
     .herosection {
-
-
         .hero-background {
-
             .namebox {
-
                 div {
                 }
 
                 .hi {
                     font-size: 6rem;
-                    z-index: 2;
-                    color: var(--secondary-color);
-                    margin: 0px;
-                    line-height: 120px;
-                    margin-top: 21px;
-                    white-space: wrap;
-                    text-align: center;
+                    line-height: 1.2;
+                    margin-top: 0.7rem;
                 }
 
                 .hisub {
-                    color: var(--secondary-color);
-                    font-weight: 900;
-                    margin: 0px;
-                    width: 80%;
                     font-size: 1.5rem;
-                    white-space: wrap;
-                    text-wrap: wrap;
-                    text-align: center;
-
                 }
             }
         }
